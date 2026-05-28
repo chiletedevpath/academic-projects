@@ -1,0 +1,70 @@
+/* =========================
+   PAGE HEADER
+========================= */
+
+.page-header {
+  padding-block: var(--space-10);
+  color: var(--color-surface);
+  text-align: center;
+  background: var(--color-brand);
+}
+
+.page-header h1 {
+  margin-bottom: var(--space-4);
+  color: var(--color-surface);
+  font-size: var(--text-3xl);
+}
+
+.page-header p {
+  margin-inline: auto;
+  color: var(--color-surface-warm);
+  font-size: var(--text-md);
+}
+
+/* =========================
+   PROMOCIONES
+========================= */
+
+.promociones-section {
+  background: var(--color-background);
+}
+
+#promociones-container {
+  display: grid;
+  gap: var(--space-7);
+}
+
+/* =========================
+   INFO BARS
+========================= */
+
+.top-bar,
+.bottom-bar {
+  overflow: hidden;
+  padding-block: var(--space-3);
+  color: var(--color-ink);
+  background: var(--color-accent);
+  white-space: nowrap;
+}
+
+.top-bar-track,
+.bottom-bar-track {
+  display: inline-block;
+  animation: moverTexto 18s linear infinite;
+}
+
+.top-bar span,
+.bottom-bar span {
+  margin-right: var(--space-10);
+  font-weight: 600;
+}
+
+@keyframes moverTexto {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}

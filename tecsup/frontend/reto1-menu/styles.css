@@ -1,0 +1,192 @@
+/* =========================
+   RESET BASICO
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+  background-color: #f4f4f4;
+
+  color: #222;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  background-color: white;
+
+  padding: 20px 40px;
+
+  border-bottom: 1px solid #ddd;
+
+  display: flex;
+
+  align-items: center;
+}
+
+/* =========================
+   BRAND
+========================= */
+
+.brand {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  font-weight: bold;
+
+  font-size: 18px;
+}
+
+/* Logo circular */
+.logo {
+  width: 40px;
+
+  height: 40px;
+
+  border-radius: 50%;
+
+  background-color: #ff6b00;
+}
+
+/* =========================
+   CONTENEDOR PRINCIPAL
+========================= */
+
+.container {
+  max-width: 1200px;
+
+  margin: 50px auto;
+
+  padding: 20px;
+}
+
+/* =========================
+   TITULOS
+========================= */
+
+.menu-section h1 {
+  font-size: 40px;
+
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #666;
+
+  margin-bottom: 40px;
+
+  font-size: 18px;
+}
+
+/* =========================
+   GRID
+========================= */
+
+.grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+  background-color: white;
+
+  border-radius: 15px;
+
+  overflow: hidden;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  transition: transform 0.3s;
+}
+
+/* Efecto hover */
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* =========================
+   IMAGEN
+========================= */
+
+.card img {
+  width: 100%;
+
+  height: 220px;
+
+  object-fit: cover;
+}
+
+/* =========================
+   CONTENIDO CARD
+========================= */
+
+.card-body {
+  padding: 20px;
+}
+
+/* =========================
+   FILA NOMBRE + PRECIO
+========================= */
+
+.row {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 15px;
+}
+
+.row h3 {
+  font-size: 20px;
+}
+
+.price {
+  color: #ff6b00;
+
+  font-weight: bold;
+}
+
+/* =========================
+   TEXTO
+========================= */
+
+.card-body p {
+  color: #666;
+
+  line-height: 1.5;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

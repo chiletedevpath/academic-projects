@@ -1,0 +1,77 @@
+{
+  "info": {
+    "_postman_id": "16d7b355-d487-4289-bbbf-3873ae76b393",
+    "name": "Evidencias examen sunatConsultas",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52043947",
+    "_collection_link": "https://go.postman.co/collection/52043947-16d7b355-d487-4289-bbbf-3873ae76b393?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "01 - Consultar RUC válido",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/sunat/ruc/20100901481",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "sunat",
+            "ruc",
+            "20100901481"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "02-  Consultar RUC inválido",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/sunat/ruc/201257",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "sunat",
+            "ruc",
+            "201257"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "03 - Error de proveedor",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/sunat/ruc/20125789250",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "sunat",
+            "ruc",
+            "20125789250"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

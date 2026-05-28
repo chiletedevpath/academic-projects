@@ -1,0 +1,116 @@
+/* =========================
+   SITE FOOTER
+========================= */
+
+.site-footer {
+  margin-top: var(--space-8);
+  border-top: 1px solid var(--color-border);
+  color: var(--color-surface-warm);
+  background: var(--color-brand-dark);
+}
+
+.site-footer__inner {
+  display: grid;
+  width: min(100% - calc(var(--container-padding) * 2), var(--container));
+  margin-inline: auto;
+  padding-block: var(--space-8);
+  gap: var(--space-7);
+}
+
+.site-footer__brand,
+.site-footer__nav,
+.site-footer__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* =========================
+   BRAND
+========================= */
+
+.site-footer__logo {
+  display: inline-flex;
+  margin-bottom: var(--space-4);
+  color: var(--color-surface);
+  font-family: var(--font-heading);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  line-height: var(--line-tight);
+}
+
+.site-footer__logo:hover {
+  color: var(--color-accent);
+}
+
+.site-footer__description {
+  max-width: 34ch;
+  margin-bottom: 0;
+  color: var(--color-surface-warm);
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.site-footer__title {
+  margin-bottom: var(--space-4);
+  color: var(--color-accent-soft);
+  font-family: var(--font-primary);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: var(--line-heading);
+  text-transform: uppercase;
+}
+
+.site-footer__list {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.site-footer__link {
+  display: inline-flex;
+  color: var(--color-surface-warm);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  line-height: var(--line-heading);
+  transition:
+    color var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.site-footer__link:hover {
+  color: var(--color-accent);
+  transform: translateX(var(--space-1));
+}
+
+/* =========================
+   BOTTOM
+========================= */
+
+.site-footer__bottom {
+  width: min(100% - calc(var(--container-padding) * 2), var(--container));
+  margin-inline: auto;
+  padding-block: var(--space-5);
+  border-top: 1px solid var(--color-border-inverse);
+}
+
+.site-footer__copyright {
+  max-width: none;
+  margin-bottom: 0;
+  color: var(--color-surface-warm);
+  font-size: var(--text-sm);
+  text-align: center;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (min-width: 48rem) {
+  .site-footer__inner {
+    grid-template-columns: minmax(0, 1.4fr) repeat(2, minmax(10rem, 1fr));
+    align-items: start;
+  }
+}

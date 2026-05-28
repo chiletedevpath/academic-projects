@@ -1,0 +1,433 @@
+/* =========================
+   RESET GENERAL
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body {
+  font-family: "Poppins", sans-serif;
+
+  background-color: #f4f6f9;
+
+  color: #2c2c2c;
+
+  line-height: 1.6;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 20px 10%;
+
+  background-color: #1e293b;
+
+  color: white;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+  font-size: 1.8rem;
+
+  font-weight: 700;
+}
+
+/* =========================
+   NAV LINKS
+========================= */
+
+.nav-links {
+  display: flex;
+
+  gap: 30px;
+
+  list-style: none;
+}
+
+/* Links */
+.nav-links a {
+  text-decoration: none;
+
+  color: white;
+
+  font-weight: 500;
+
+  transition: 0.3s;
+}
+
+/* Hover */
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  padding: 80px 10%;
+}
+
+/* =========================
+   HERO CONTAINER
+========================= */
+
+.hero-container {
+  /* Activa Flexbox */
+  display: flex;
+
+  /* Separa elementos horizontalmente */
+  justify-content: space-between;
+
+  /* Centra verticalmente los elementos */
+  align-items: center;
+
+  /* Espacio entre elementos */
+  gap: 50px;
+
+  /* Permite salto de línea en pantallas pequeñas */
+  flex-wrap: wrap;
+}
+
+/* =========================
+   HERO TEXT
+========================= */
+
+.hero-text {
+  flex: 1;
+}
+
+/* Título */
+.hero-text h1 {
+  font-size: 3.5rem;
+
+  margin-bottom: 20px;
+}
+
+/* Texto */
+.hero-text p {
+  margin-bottom: 30px;
+
+  font-size: 1.1rem;
+}
+
+/* Botón */
+.hero-text button {
+  padding: 14px 30px;
+
+  border: none;
+
+  background-color: #2563eb;
+
+  color: white;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+/* Hover botón */
+.hero-text button:hover {
+  background-color: #1d4ed8;
+}
+
+/* =========================
+   HERO IMAGE
+========================= */
+
+.hero-image {
+  flex: 1;
+
+  display: flex;
+
+  justify-content: center;
+}
+
+/* Imagen */
+.hero-image img {
+  width: 100%;
+
+  max-width: 500px;
+
+  border-radius: 20px;
+
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================
+   CARDS SECTION
+========================= */
+
+.cards-section {
+  padding: 80px 10%;
+}
+
+/* Título sección */
+.cards-section h2 {
+  text-align: center;
+
+  margin-bottom: 50px;
+
+  font-size: 2.5rem;
+}
+
+/* =========================
+   CARDS CONTAINER
+========================= */
+
+.cards-container {
+  /* Activa Flexbox */
+  display: flex;
+
+  /* Espacio entre tarjetas */
+  gap: 25px;
+
+  /* Permite múltiples líneas */
+  flex-wrap: wrap;
+
+  /* Centra horizontalmente */
+  justify-content: center;
+
+  /* Alinea líneas flex verticalmente */
+  align-content: center;
+}
+
+/* =========================
+   CARD GENERAL
+========================= */
+
+.card {
+  background-color: white;
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.08);
+
+  flex-basis: 250px;
+
+  flex-shrink: 1;
+
+  transition: 0.3s;
+}
+
+/* Hover */
+.card:hover {
+  transform: translateY(-8px);
+}
+
+/* =========================
+   FLEX GROW
+========================= */
+
+/* Esta card crece más */
+.card-grow {
+  flex-grow: 2;
+}
+
+/* =========================
+   ORDER
+========================= */
+
+/* Cambia orden visual */
+.card-order {
+  order: -1;
+}
+
+/* =========================
+   ALIGN SELF
+========================= */
+
+/* Alineación individual */
+.card-align {
+  align-self: flex-end;
+}
+
+/* =========================
+   FLEX BASIS
+========================= */
+
+/* Tamaño inicial flexible */
+.card-basis {
+  flex-basis: 350px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  background-color: #0f172a;
+
+  color: white;
+
+  margin-top: 80px;
+
+  padding-top: 60px;
+}
+
+/* =========================
+   CONTENEDOR
+========================= */
+
+.footer-container {
+  width: 90%;
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  gap: 40px;
+
+  flex-wrap: wrap;
+
+  padding-bottom: 40px;
+}
+
+/* =========================
+   COLUMNAS
+========================= */
+
+.footer-column {
+  flex: 1;
+
+  min-width: 220px;
+}
+
+/* =========================
+   TITULOS
+========================= */
+
+.footer-column h3 {
+  margin-bottom: 18px;
+
+  font-size: 1.2rem;
+
+  color: #38bdf8;
+}
+
+/* =========================
+   TEXTOS
+========================= */
+
+.footer-column p {
+  color: rgba(255, 255, 255, 0.75);
+
+  line-height: 1.8;
+
+  margin-bottom: 12px;
+}
+
+/* =========================
+   DESCRIPCIÓN
+========================= */
+
+.footer-description {
+  max-width: 260px;
+}
+
+/* =========================
+   FILOSOFÍA
+========================= */
+
+.footer-phrase {
+  font-style: italic;
+
+  max-width: 250px;
+}
+
+/* =========================
+   LINKS
+========================= */
+
+.footer-column a {
+  color: #7dd3fc;
+
+  text-decoration: none;
+
+  font-weight: 500;
+
+  transition: 0.3s;
+}
+
+/* Hover */
+.footer-column a:hover {
+  color: white;
+}
+
+/* =========================
+   FOOTER INFERIOR
+========================= */
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+  text-align: center;
+
+  padding: 20px;
+}
+
+/* Texto inferior */
+.footer-bottom p {
+  color: rgba(255, 255, 255, 0.55);
+
+  font-size: 0.9rem;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  /* Hero cambia a columna */
+  .footer-container {
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  .footer-description,
+  .footer-phrase {
+    max-width: 100%;
+
+    margin: 0 auto;
+  }
+
+  /* Cards columna */
+  .cards-container {
+    flex-direction: column;
+  }
+
+  /* Título responsive */
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+}

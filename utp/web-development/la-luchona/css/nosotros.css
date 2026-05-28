@@ -1,0 +1,354 @@
+/* =========================
+   ABOUT PAGE
+========================= */
+
+.nosotros-seccion-titulo {
+  position: relative;
+  margin-bottom: var(--space-7);
+  color: var(--color-ink);
+  font-family: var(--font-heading);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  line-height: var(--line-heading);
+  text-align: center;
+}
+
+.nosotros-seccion-titulo::after {
+  display: block;
+  width: 3.75rem;
+  height: 0.25rem;
+  margin: var(--space-3) auto 0;
+  content: "";
+  background: var(--color-accent);
+  border-radius: var(--radius-pill);
+}
+
+/* Hero */
+.nosotros-hero {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  min-height: clamp(24rem, 44vw, 32rem);
+  padding: calc(var(--header-height) + var(--space-8)) var(--container-padding) var(--space-8);
+  place-items: center;
+  overflow: hidden;
+  text-align: center;
+  background:
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--color-brand-dark) 94%, transparent),
+      color-mix(in srgb, var(--color-brand) 82%, transparent)
+    ),
+    url("../assets/img/banners/hero-banner.png") center / cover,
+    var(--color-brand-dark);
+}
+
+.nosotros-hero__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--color-ink) 12%, transparent),
+    color-mix(in srgb, var(--color-ink) 26%, transparent)
+  );
+}
+
+.nosotros-hero__content {
+  width: min(100%, var(--container-narrow));
+  color: var(--color-surface);
+}
+
+.nosotros-hero__subtitulo,
+.nosotros-label {
+  display: inline-flex;
+  margin-bottom: var(--space-3);
+  color: var(--color-accent-soft);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.nosotros-hero__titulo {
+  margin-bottom: var(--space-4);
+  color: var(--color-surface);
+  font-size: var(--text-hero);
+  line-height: var(--line-tight);
+}
+
+.nosotros-hero__descripcion {
+  max-width: 36rem;
+  margin-inline: auto;
+  color: color-mix(in srgb, var(--color-surface-warm) 88%, transparent);
+  font-size: var(--text-md);
+  font-weight: 400;
+  line-height: var(--line-body);
+}
+
+/* Company */
+.nosotros-empresa {
+  padding-block: var(--section-y);
+  background: var(--color-surface);
+}
+
+.nosotros-empresa__grid {
+  display: grid;
+  gap: var(--space-7);
+  align-items: start;
+}
+
+.nosotros-label {
+  color: var(--color-brand);
+}
+
+.nosotros-empresa__titulo {
+  margin-bottom: var(--space-5);
+  color: var(--color-ink);
+  font-family: var(--font-heading);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  line-height: var(--line-heading);
+}
+
+.nosotros-empresa__texto p {
+  margin-bottom: var(--space-4);
+  color: var(--color-muted);
+  font-size: var(--text-base);
+  line-height: var(--line-body);
+}
+
+.nosotros-empresa__texto strong {
+  color: var(--color-ink);
+  font-weight: 700;
+}
+
+.nosotros-empresa__datos {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.dato-card {
+  display: flex;
+  gap: var(--space-4);
+  align-items: center;
+  padding: var(--space-4);
+  background: var(--color-surface-warm);
+  border: 1px solid var(--color-border);
+  border-left: 0.25rem solid var(--color-brand);
+  border-radius: var(--radius-md);
+}
+
+.dato-card__icono {
+  flex: 0 0 auto;
+  font-size: var(--text-xl);
+}
+
+.dato-card__label {
+  display: block;
+  color: var(--color-brand);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.dato-card__valor {
+  display: block;
+  color: var(--color-ink);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+/* Mission and vision */
+.nosotros-mv {
+  padding-block: var(--section-y);
+  background: var(--color-background);
+}
+
+.nosotros-mv__grid {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.mv-card {
+  padding: clamp(var(--space-5), 5vw, var(--space-7));
+  text-align: center;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition:
+    box-shadow var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.mv-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.mv-card__icono {
+  margin-bottom: var(--space-4);
+  font-size: clamp(2rem, 5vw, 2.8rem);
+}
+
+.mv-card__titulo {
+  margin-bottom: var(--space-4);
+  color: var(--color-ink);
+  font-family: var(--font-heading);
+  font-size: var(--text-lg);
+  font-weight: 700;
+  line-height: var(--line-heading);
+}
+
+.mv-card--mision .mv-card__titulo {
+  color: var(--color-brand);
+}
+
+.mv-card--vision .mv-card__titulo {
+  color: var(--color-brand-dark);
+}
+
+.mv-card__texto {
+  color: var(--color-muted);
+  font-size: var(--text-sm);
+  line-height: var(--line-body);
+}
+
+/* Values */
+.nosotros-valores {
+  padding-block: var(--section-y);
+  background: var(--color-surface);
+}
+
+.nosotros-valores__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  gap: var(--space-5);
+}
+
+.valor-card {
+  padding: var(--space-6) var(--space-5);
+  text-align: center;
+  background: var(--color-surface-warm);
+  border: 1px solid var(--color-border);
+  border-top: 0.25rem solid var(--color-accent);
+  border-radius: var(--radius-lg);
+  transition:
+    box-shadow var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.valor-card:hover {
+  box-shadow: var(--shadow-sm);
+  transform: translateY(-2px);
+}
+
+.valor-card__icono {
+  margin-bottom: var(--space-3);
+  font-size: clamp(1.9rem, 4vw, 2.4rem);
+}
+
+.valor-card__titulo {
+  margin-bottom: var(--space-3);
+  color: var(--color-ink);
+  font-family: var(--font-heading);
+  font-size: var(--text-md);
+  font-weight: 700;
+  line-height: var(--line-heading);
+}
+
+.valor-card__texto {
+  color: var(--color-muted);
+  font-size: var(--text-sm);
+  line-height: var(--line-body);
+}
+
+/* Stats */
+.nosotros-cifras {
+  padding-block: clamp(var(--space-7), 8vw, var(--space-9));
+  background: var(--color-brand);
+}
+
+.nosotros-cifras__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr));
+  gap: var(--space-4);
+}
+
+.cifra-card {
+  padding: var(--space-5);
+  color: var(--color-surface);
+  text-align: center;
+}
+
+.cifra-card__numero {
+  display: block;
+  margin-bottom: var(--space-2);
+  color: var(--color-surface);
+  font-family: var(--font-heading);
+  font-size: clamp(2.4rem, 6vw, 3.4rem);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.cifra-card__label {
+  display: block;
+  color: color-mix(in srgb, var(--color-surface-warm) 86%, transparent);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+/* Closing quote */
+.nosotros-frase {
+  padding-block: var(--section-y);
+  text-align: center;
+  background: var(--color-surface-warm);
+}
+
+.nosotros-frase__texto {
+  max-width: var(--container-narrow);
+  margin: 0 auto var(--space-5);
+  color: var(--color-ink);
+  font-family: var(--font-heading);
+  font-size: clamp(1.35rem, 4vw, 2rem);
+  font-style: italic;
+  font-weight: 600;
+  line-height: var(--line-heading);
+}
+
+.nosotros-frase__autor {
+  color: var(--color-brand);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+@media (min-width: 56rem) {
+  .nosotros-empresa__grid {
+    grid-template-columns: minmax(0, 1.18fr) minmax(18rem, 0.82fr);
+  }
+
+  .nosotros-mv__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mv-card,
+  .valor-card {
+    transition: none;
+  }
+
+  .mv-card:hover,
+  .valor-card:hover {
+    transform: none;
+  }
+}
