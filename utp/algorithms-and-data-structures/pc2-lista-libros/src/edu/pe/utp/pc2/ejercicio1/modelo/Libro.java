@@ -2,7 +2,7 @@ package edu.pe.utp.pc2.ejercicio1.modelo;
 
 /**
  * TAD Libro.
- * Esta clase representa el dato que será almacenado
+ * Esta clase representa el dato que serÃ¡ almacenado
  * dentro de cada nodo de la lista enlazada.
  * Importante:
  * - El elemento principal de la lista NO es String ni tipo primitivo.
