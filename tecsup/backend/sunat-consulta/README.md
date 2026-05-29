@@ -199,7 +199,7 @@ Si una empresa fue consultada en los últimos 10 minutos:
 
 ## 10.- Evidencias
 
-En la carpeta `/evidencias` se incluyen:
+En la carpeta `/assets/img/evidencias` se incluyen:
 
 - RUC válido (SUCCESS)
 - RUC inválido (ERROR validación)
