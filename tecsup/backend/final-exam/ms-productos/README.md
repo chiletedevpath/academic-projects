@@ -1,101 +1,55 @@
 # ms-productos
 
-Microservicio backend desarrollado con Spring Boot para la gestión de productos mediante operaciones CRUD, utilizando PostgreSQL, Spring Data JPA, Docker y despliegue en Render.
+Microservicio backend desarrollado con Spring Boot para gestionar productos. Forma parte del examen final de backend de Tecsup junto con `ms-pedidos`.
 
----
+## Proposito
 
-# Tecnologías utilizadas
+Permitir el registro, consulta, actualizacion y eliminacion logica de productos, aplicando validaciones y persistencia en PostgreSQL.
+
+## Stack
 
 - Java 17
 - Spring Boot
 - Spring Data JPA
 - PostgreSQL
-- Docker
-- Render
 - Maven
 - Lombok
 - Jakarta Validation
+- Docker
+- Render
 
----
+## Arquitectura
 
-# Arquitectura del proyecto
+El proyecto esta organizado por capas:
 
-El proyecto está organizado en capas:
+- `controller`: endpoints REST.
+- `service`: reglas de negocio.
+- `repository`: acceso a datos.
+- `dto`: objetos de entrada y salida.
+- `entity`: modelo persistente.
+- `exception`: manejo de errores.
 
-- controller
-- service
-- repository
-- dto
-- entity
-- exception
+## Funcionalidades
 
----
+- Registrar productos.
+- Listar productos.
+- Buscar producto por ID.
+- Actualizar productos.
+- Realizar eliminacion logica.
+- Validar datos de entrada.
+- Manejar excepciones de forma centralizada.
 
-# Funcionalidades
-
-- Registrar productos
-- Listar productos
-- Buscar producto por ID
-- Actualizar productos
-- Eliminación lógica de productos
-- Validaciones de datos
-- Manejo global de excepciones
-
----
-
-# Endpoints disponibles
-
-## Crear producto
-
-POST
+## Endpoints Principales
 
 ```http
-/api/productos
+POST   /api/productos
+GET    /api/productos
+GET    /api/productos/{id}
+PUT    /api/productos/{id}
+DELETE /api/productos/{id}
 ```
 
----
-
-## Listar productos
-
-GET
-
-```http
-/api/productos
-```
-
----
-
-## Buscar producto por ID
-
-GET
-
-```http
-/api/productos/{id}
-```
-
----
-
-## Actualizar producto
-
-PUT
-
-```http
-/api/productos/{id}
-```
-
----
-
-## Eliminar producto
-
-DELETE
-
-```http
-/api/productos/{id}
-```
-
----
-
-# Variables de entorno
+## Variables de Entorno
 
 ```env
 DB_URL=
@@ -104,31 +58,13 @@ DB_PASSWORD=
 PORT=
 ```
 
----
-
-# Docker
-
-Construcción de imagen Docker:
+## Docker
 
 ```bash
 docker build -t ms-productos .
-```
-
-Ejecución del contenedor:
-
-```bash
 docker run -p 8080:8080 ms-productos
 ```
 
----
+## Estado
 
-# Despliegue
-
-Microservicio desplegado en Render.
-
----
-
-# Autor
-
-Adrian Pisco | 
-Full Stack - Tecsup
+Proyecto academico finalizado.

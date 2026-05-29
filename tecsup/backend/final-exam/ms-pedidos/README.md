@@ -1,102 +1,56 @@
 # ms-pedidos
 
-Microservicio backend desarrollado con Spring Boot para la gestión de pedidos mediante operaciones CRUD, validaciones, actualización de estados y despliegue en la nube utilizando PostgreSQL, Docker y Render.
+Microservicio backend desarrollado con Spring Boot para gestionar pedidos. Forma parte del examen final de backend de Tecsup junto con `ms-productos`.
 
----
+## Proposito
 
-# Tecnologías utilizadas
+Permitir el registro, consulta, eliminacion y actualizacion de estado de pedidos, aplicando validaciones y calculando automaticamente el total del pedido.
+
+## Stack
 
 - Java 17
 - Spring Boot
 - Spring Data JPA
 - PostgreSQL
-- Docker
-- Render
 - Maven
 - Lombok
 - Jakarta Validation
+- Docker
+- Render
 
----
+## Arquitectura
 
-# Arquitectura del proyecto
+El proyecto esta organizado por capas:
 
-El proyecto está organizado en capas:
+- `controller`: endpoints REST.
+- `service`: reglas de negocio.
+- `repository`: acceso a datos.
+- `dto`: objetos de entrada y salida.
+- `entity`: modelo persistente.
+- `exception`: manejo de errores.
 
-- controller
-- service
-- repository
-- dto
-- entity
-- exception
+## Funcionalidades
 
----
+- Registrar pedidos.
+- Listar pedidos.
+- Buscar pedido por ID.
+- Eliminar pedidos.
+- Actualizar estado de pedidos.
+- Validar datos de entrada.
+- Manejar excepciones de forma centralizada.
+- Calcular automaticamente el total del pedido.
 
-# Funcionalidades
-
-- Registrar pedidos
-- Listar pedidos
-- Buscar pedido por ID
-- Eliminar pedidos
-- Actualizar estado de pedidos
-- Validaciones de datos
-- Manejo global de excepciones
-- Cálculo automático del total del pedido
-
----
-
-# Endpoints disponibles
-
-## Crear pedido
-
-POST
+## Endpoints Principales
 
 ```http
-/api/pedidos
+POST   /api/pedidos
+GET    /api/pedidos
+GET    /api/pedidos/{id}
+DELETE /api/pedidos/{id}
+PATCH  /api/pedidos/{id}/estado
 ```
 
----
-
-## Listar pedidos
-
-GET
-
-```http
-/api/pedidos
-```
-
----
-
-## Buscar pedido por ID
-
-GET
-
-```http
-/api/pedidos/{id}
-```
-
----
-
-## Eliminar pedido
-
-DELETE
-
-```http
-/api/pedidos/{id}
-```
-
----
-
-## Actualizar estado del pedido
-
-PATCH
-
-```http
-/api/pedidos/{id}/estado
-```
-
----
-
-# Variables de entorno
+## Variables de Entorno
 
 ```env
 DB_URL=
@@ -105,30 +59,13 @@ DB_PASSWORD=
 PORT=
 ```
 
----
-
-# Docker
-
-Construcción de imagen Docker:
+## Docker
 
 ```bash
 docker build -t ms-pedidos .
-```
-
-Ejecución del contenedor:
-
-```bash
 docker run -p 8081:8081 ms-pedidos
 ```
 
----
+## Estado
 
-# Despliegue
-
-Microservicio desplegado en Render.
-
----
-
-# Autor
-
-Adrian Pisco | Full Stack - Tecsup
+Proyecto academico finalizado.

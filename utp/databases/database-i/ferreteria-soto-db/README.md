@@ -4,6 +4,8 @@
 
 Final Database I project developed for UTP. It models the main operations of a hardware store: users, customers, product classification, products, sales, auditing, and pricing policies.
 
+This project remains here as academic evidence. Later, it can serve as a foundation for a larger Ferreteria Soto portfolio project, but it is not separated as an independent repository yet.
+
 ## Contents
 
 - `00-create-database.sql`: database creation.
