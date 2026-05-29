@@ -1,7 +1,7 @@
 package pe.com.utp.modelo.enums;
 
 public enum TurnoConsultaAmbulatoria {
-    MAÑANA("08:00 - 13:00"),
+    MANANA("08:00 - 13:00"),
     TARDE("13:00 - 19:00");
 
     private final String rango;
