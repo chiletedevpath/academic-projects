@@ -6,6 +6,7 @@
 
 | Area | Project | Source |
 | --- | --- | --- |
+| Databases | `utp/databases/database-i/ferreteria-soto-db` | Database I final project |
 | Databases | `utp/databases/database-ii/utp-sql` | Base de Datos II labs and PC1 |
 | Algorithms and Data Structures | `utp/algorithms-and-data-structures/algorithms-and-data-structures` | Java course workspace |
 | Algorithms and Data Structures | `utp/algorithms-and-data-structures/clinica-salud-vital` | Clinic project |

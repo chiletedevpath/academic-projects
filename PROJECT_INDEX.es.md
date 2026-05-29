@@ -6,6 +6,7 @@
 
 | Area | Proyecto | Origen |
 | --- | --- | --- |
+| Bases de datos | `utp/databases/database-i/ferreteria-soto-db` | Proyecto final de Base de Datos I |
 | Bases de datos | `utp/databases/database-ii/utp-sql` | Laboratorios y PC1 de Base de Datos II |
 | Algoritmos y estructuras de datos | `utp/algorithms-and-data-structures/algorithms-and-data-structures` | Workspace Java del curso |
 | Algoritmos y estructuras de datos | `utp/algorithms-and-data-structures/clinica-salud-vital` | Proyecto de clinica |
